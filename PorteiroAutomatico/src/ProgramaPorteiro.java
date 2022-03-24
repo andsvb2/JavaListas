@@ -5,33 +5,30 @@ public class ProgramaPorteiro {
 	public static void main(String[] args) {
 
 		Porteiro porteiro = new Porteiro();
-		int contador = 0;
+		int contador = 1;
+		Scanner input = new Scanner(System.in);
 		
-		do {
-			Pessoa p1 = new Pessoa();
-			Scanner input = new Scanner(System.in);
+		while (contador <= 10) {
 			
-			System.out.println("Qual seu nome?");
+			Pessoa p1 = new Pessoa();
+			
+			System.out.print("Nome: ");
 			p1.setNome(input.nextLine());
 			
-			System.out.println("Qual sua idade?");
+			System.out.print("Idade: ");
 			p1.setIdade(Integer.parseInt(input.nextLine()));
 			
-			System.out.println("Qual seu sexo?");
+			System.out.print("Sexo (M, F): ");
 			String sexo = input.nextLine().toUpperCase();
 			
-			input.close();
-			
-			if (sexo.equalsIgnoreCase("MASCULINO") || sexo.equalsIgnoreCase("FEMININO")) {
+			if (sexo.equalsIgnoreCase("M") || sexo.equalsIgnoreCase("F")) {
 				p1.setSexo(Sexo.valueOf(sexo));
-			} else {
-				continue;
-			}
+			} 
 			
-			String mensagem = porteiro.boasVindas(p1);
-			
-			System.out.println(mensagem);
+			System.out.printf("%n" + porteiro.boasVindas(p1) + "%n%n");
 			contador++;
-		} while (contador < 10);
+		}
+		
+		input.close();
 	}
 }

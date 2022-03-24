@@ -1,5 +1,5 @@
 
 public enum Sexo {
-	MASCULINO,
-	FEMININO;
+	M,
+	F;
 }
