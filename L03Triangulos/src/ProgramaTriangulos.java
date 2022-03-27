@@ -4,11 +4,12 @@ public class ProgramaTriangulos {
 
 	public static void main(String[] args) {
 		
-		Triangulo t = new Triangulo();
 		Scanner input = new Scanner(System.in);
 		int contEqu = 0, contEsc = 0, contIso = 0, contador = 0, resposta = 0;
 
 		do {
+			Triangulo t = new Triangulo();
+			
 			System.out.print("Lado 1: ");
 			t.setLado1(input.nextInt());
 			
