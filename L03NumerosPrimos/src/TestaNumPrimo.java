@@ -8,14 +8,15 @@ public class TestaNumPrimo {
 		
 		CDF cdf = new CDF();
 		Scanner input = new Scanner(System.in);
-		int contador = 0;
+		int contador = 2;
 		
 		System.out.print("Número para testar: ");
 		int num = input.nextInt();
+//		int num = 100000;
 		
 		input.close();
 		
-		while (contador <= num) {
+		while (contador < num) {
 			if (cdf.ePrimo(contador)) {
 				System.out.println(contador);
 			}
