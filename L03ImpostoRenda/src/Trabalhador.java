@@ -3,8 +3,7 @@ public class Trabalhador {
 
 	private float salarioBruto;
 	private int dependentes;
-	
-	
+		
 	public float getSalarioBruto() {
 		return salarioBruto;
 	}
@@ -20,5 +19,4 @@ public class Trabalhador {
 	public void setDependentes(int novoDependentes) {
 		dependentes = novoDependentes;
 	}
-	
 }
