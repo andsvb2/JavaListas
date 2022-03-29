@@ -2,21 +2,21 @@
 public class Contador {
 
 	public float calcularIR(Trabalhador t) {
-		float salarioDeduzido, impostoRecolhido = 0;
+
+		float salarioDeduzido;
 		
 		salarioDeduzido = (float) (t.getSalarioBruto() - ((t.getDependentes() * 189.59) + (t.getSalarioBruto() * 0.08)));
 		
 		if (salarioDeduzido >= 4664.69) {
-			impostoRecolhido += 869.36;
+			return 869.36f;
 		} else if (salarioDeduzido >= 3751.06) {
-			impostoRecolhido += 636.13;
+			return 636.13f;
 		} else if (salarioDeduzido >= 2826.66) {
-			impostoRecolhido += 354.80;
+			return 354.80f;
 		} else if (salarioDeduzido >= 1903.99) {
-			impostoRecolhido += 142.80;
+			return 142.80f;
 		} else {
-			impostoRecolhido += 0;
+			return 0;
 		}
-		return impostoRecolhido;
 	}
 }
