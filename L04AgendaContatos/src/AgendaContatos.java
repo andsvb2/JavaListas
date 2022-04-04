@@ -31,7 +31,7 @@ public class AgendaContatos {
 				System.out.println("\n"+"--- ENCERRANDO -- O -- PROGRAMA ---\n");
 				break;
 			} else if (pos >= 0 && pos <= 4) {
-				System.out.printf("%n%s, %s: %s%n%n", agenda[pos].getNome(),
+				System.out.printf("\n%s, %s: %s\n\n", agenda[pos].getNome(),
 						agenda[pos].getTipoTelefone().toString().toLowerCase(), agenda[pos].getTelefone());
 			} else {
 				System.out.println("Essa posição não é válida.\n");
