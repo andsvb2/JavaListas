@@ -2,13 +2,6 @@ import java.util.Scanner;
 
 public class MainTestaMaquina {
 
-	public static void listaRoupas(Roupa[] monte) {
-		for (int i = 0; i < monte.length; i++) {
-			System.out.printf((i + 1) + "ª roupa: %s, %s, %s.\n", monte[i].getCor().toString().toLowerCase(),
-					monte[i].getTamanho().toString().toLowerCase(), monte[i].getEstado().toString().toLowerCase());
-		}
-	}
-
 	public static void main(String[] args) {
 		MaquinaDeLavar maquina = new MaquinaDeLavar();
 		Scanner input = new Scanner(System.in);
@@ -34,6 +27,7 @@ public class MainTestaMaquina {
 
 		input.close();
 
+		System.out.println("Cesto de roupas.");
 		listaRoupas(cesto);
 		int tempo = maquina.lavar(cesto);
 
@@ -41,7 +35,15 @@ public class MainTestaMaquina {
 			System.out.println("\nNão é possível realizar a lavagem.\nSepare as roupas brancas das coloridas.");
 		} else {
 			System.out.printf("\nTempo necessário para lavagem: %d minutos.\n\n", tempo);
+			System.out.println("Roupas após a lavagem.");
 			listaRoupas(cesto);
+		}
+	}
+	
+	public static void listaRoupas(Roupa[] monte) {
+		for (int i = 0; i < monte.length; i++) {
+			System.out.printf((i + 1) + "ª roupa: %s, %s, %s.\n", monte[i].getCor().toString().toLowerCase(),
+					monte[i].getTamanho().toString().toLowerCase(), monte[i].getEstado().toString().toLowerCase());
 		}
 	}
 }
