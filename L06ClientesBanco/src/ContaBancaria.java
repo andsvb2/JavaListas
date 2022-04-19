@@ -25,22 +25,19 @@ public class ContaBancaria {
 	}
 	
 	public boolean sacar(float valorSaque) {
-		if ((valorSaque >= 0) && (saldo - valorSaque >= 0)) {
+		if ((valorSaque > 0) && (saldo - valorSaque >= 0)) {
 			saldo -= valorSaque;
 			return true;
-		} else {
-			return false;
-		}
-		
+		} 
+		return false;
 	}
 	
 	public boolean depositar(float valorDeposito) {
 		if (valorDeposito >= 0) {
 			saldo += valorDeposito;
 			return true;
-		} else {
-			return false;
 		}
+		return false;
 	}
 	
 	public float getSaldo() {
