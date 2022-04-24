@@ -34,7 +34,10 @@ public class Programa {
 	}
 	
 	public static void d() {
-		
+		Operacoes op = new Operacoes();
+		int x = 2;
+		int y = 3;
+		System.out.println(op.dobro(x)+op.dobro(y));
 	}
 	
 	public static void e() {
