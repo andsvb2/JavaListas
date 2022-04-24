@@ -53,8 +53,12 @@ public class Programa {
 	}
 	
 	public static void f() {
-		
-	}
+		Operacoes op = new Operacoes();
+		int y = 3;
+		int z = op.dobro(y);
+		System.out.println("Letra f: ");
+		System.out.println(2 * op.dobro(z) + z + 3 * y);
+		}
 	
 	public static void g() {
 		
