@@ -61,6 +61,11 @@ public class Programa {
 		}
 	
 	public static void g() {
-		
+		Operacoes op = new Operacoes();
+		int y = 3;
+		int z = op.dobro(y);
+		y = op.dobro(z);
+		System.out.println("Letra g: ");
+		System.out.println(2 * op.dobro(z) + z + 3 * y);
 	}
 }
