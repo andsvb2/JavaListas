@@ -16,11 +16,13 @@ public class Programa {
 		Operacoes op = new Operacoes();
 		int x = 2;
 		op.dobro(x);
-		System.out.println("Letra a: " + x);
+		System.out.println("Letra a: ");
+		System.out.println(x);
 	}
 	
 	public static void b() {
 		Operacoes op = new Operacoes();
+		System.out.println("Letra b: ");
 		System.out.println(op.dobro("ba"));;
 	}
 	
@@ -28,6 +30,7 @@ public class Programa {
 		Operacoes op = new Operacoes();
 		int x[] = {1, 3, 6, 9};
 		op.dobro(x);
+		System.out.println("Letra c: ");
 		for(int i : x) {
 			System.out.println(i);
 		}
@@ -37,6 +40,7 @@ public class Programa {
 		Operacoes op = new Operacoes();
 		int x = 2;
 		int y = 3;
+		System.out.println("Letra d: ");
 		System.out.println(op.dobro(x)+op.dobro(y));
 	}
 	
@@ -44,6 +48,7 @@ public class Programa {
 		Operacoes op = new Operacoes();
 		int y = 3;
 		int z = op.dobro(y);
+		System.out.println("Letra e: ");
 		System.out.println(op.dobro(z) + y);
 	}
 	
