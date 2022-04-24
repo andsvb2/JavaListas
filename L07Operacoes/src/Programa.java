@@ -2,7 +2,16 @@
 public class Programa {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
+		public void a(){
+			Operacoes op = new Operacoes();
+			int x = 2;
+			op.dobro(x);
+			System.out.println("Letra a: " + x);
+		}
+
+
+
 
 	}
 
