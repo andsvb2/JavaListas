@@ -16,10 +16,12 @@ public class MainPets {
 			System.out.print("Cadastre o dono do " + (i + 1) + "º pet: ");
 			tmpDono = input.nextLine();
 			pets[i] = new Pet(tmpTipo, tmpNome, tmpDono);
+			System.out.println();
 		}
 		
 		System.out.print("Digite um tipo de pet: ");
 		String testeTipo = input.nextLine();
+		System.out.println();
 		
 		for(Pet bicho: pets) {
 			if (testeTipo.equals(bicho.getTipo())) {
