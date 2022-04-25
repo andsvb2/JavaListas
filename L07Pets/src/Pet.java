@@ -18,6 +18,18 @@ public class Pet {
 	}
 	
 	public boolean equals(Pet p) {
-		return (tipo.equals(p.tipo) && nome.equals(p.nome) && nomeDono.equals(p.nomeDono));
+		return (tipo.equals(p.getTipo()) && nome.equals(p.getNome()) && nomeDono.equals(p.getNomeDono()));
+	}
+	
+	public String getTipo() {
+		return tipo;
+	}
+	
+	public String getNome() {
+		return nome;
+	}
+	
+	public String getNomeDono() {
+		return nomeDono;
 	}
 }
