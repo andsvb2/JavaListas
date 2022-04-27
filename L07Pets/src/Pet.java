@@ -1,12 +1,12 @@
 
 public class Pet {
 	
-	private String tipo, nome, nomeDono;
+	private String tipo, nome, dono;
 	
-	public Pet(String t, String n, String dono) {
+	public Pet(String t, String n, String d) {
 		tipo = t;
 		nome = n;
-		nomeDono = dono;
+		dono = d;
 	}
 	
 	public Pet() {
@@ -14,11 +14,11 @@ public class Pet {
 	}
 	
 	public String toString() {
-		return "Pet: " + nome + ". Tipo: " + tipo + ". Dono(a): " + nomeDono + ".";
+		return "Pet: " + nome + ". Tipo: " + tipo + ". Dono(a): " + dono + ".";
 	}
 	
 	public boolean equals(Pet p) {
-		return (tipo.equals(p.getTipo()) && nome.equals(p.getNome()) && nomeDono.equals(p.getNomeDono()));
+		return (tipo.equals(p.getTipo()) && nome.equals(p.getNome()) && dono.equals(p.getDono()));
 	}
 	
 	public String getTipo() {
@@ -29,7 +29,7 @@ public class Pet {
 		return nome;
 	}
 	
-	public String getNomeDono() {
-		return nomeDono;
+	public String getDono() {
+		return dono;
 	}
 }
