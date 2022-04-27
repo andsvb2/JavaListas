@@ -1,4 +1,4 @@
-package lista.sem03.triangulos;
+package l03.triangulos;
 
 public enum Tipo {
 	EQUILÁTERO,

@@ -1,5 +1,6 @@
+package l04.variaveis;
 
-public class Programa {
+public class MainVariaveis {
 
 	public static void main(String[] args) {
 		

@@ -1,4 +1,4 @@
-package lista.sem03.numPrimos;
+package l03.numPrimos;
 
 public class CDF {
 	

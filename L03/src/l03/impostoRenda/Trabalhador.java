@@ -1,4 +1,4 @@
-package lista.sem03.impostoRenda;
+package l03.impostoRenda;
 
 public class Trabalhador {
 
