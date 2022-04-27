@@ -1,3 +1,4 @@
+package l04.trianguloFloyd;
 import java.util.Scanner;
 
 public class MainTriangulo {
