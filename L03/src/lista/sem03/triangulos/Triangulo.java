@@ -1,3 +1,4 @@
+package lista.sem03.triangulos;
 
 public class Triangulo {
 

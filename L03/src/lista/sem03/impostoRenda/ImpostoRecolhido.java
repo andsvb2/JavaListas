@@ -1,3 +1,4 @@
+package lista.sem03.impostoRenda;
 import java.util.Scanner;
 
 public class ImpostoRecolhido {

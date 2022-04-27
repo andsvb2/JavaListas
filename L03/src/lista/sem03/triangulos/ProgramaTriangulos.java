@@ -1,3 +1,4 @@
+package lista.sem03.triangulos;
 import java.util.Scanner;
 
 public class ProgramaTriangulos {

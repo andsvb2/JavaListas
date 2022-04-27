@@ -1,3 +1,4 @@
+package lista.sem03.numPrimos;
 import java.util.Scanner;
 
 public class TestaNumPrimo {
