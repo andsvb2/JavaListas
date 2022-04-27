@@ -1,5 +1,6 @@
+package l07.operacoes;
 
-public class Programa {
+public class MainOperacoes {
 
 	public static void main(String[] args) {
 

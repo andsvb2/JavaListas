@@ -1,3 +1,4 @@
+package l07.operacoes;
 public class Operacoes {
 
     public int dobro(int x) {
