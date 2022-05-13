@@ -4,6 +4,13 @@ import java.time.LocalDateTime;
 
 public abstract class ChatBot {
 	
+	public final void iniciarAtendimento() {
+		cumprimentar();
+		apresentarBot();
+		identificarUsuario();
+		exibirOpcoes();
+	}
+	
 	public final void cumprimentar() {
 		String[] msg = {"Boa madrugada", "Bom dia", "Boa tarde", "Boa noite"};
 		int hora = LocalDateTime.now().getHour();
@@ -13,5 +20,6 @@ public abstract class ChatBot {
 	public abstract void apresentarBot();
 	
 	public abstract void identificarUsuario();
-
+	
+	public abstract void exibirOpcoes();
 }
