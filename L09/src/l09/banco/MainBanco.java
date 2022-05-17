@@ -9,7 +9,7 @@ public class MainBanco {
 
 	public static void main(String[] args) {
 		
-		ContaCorrente conta;
+		ContaCorrente conta = null;
 		Scanner input = new Scanner(System.in);
 		
 		System.out.println("Gostaria de criar uma conta corrente:\n1 - normal;\n2 - especial.");
@@ -27,10 +27,15 @@ public class MainBanco {
 		System.out.print("Saldo inicial (com centavos separados por .): ");
 		saldo = Double.parseDouble(input.nextLine());
 		
-		if (opcao == 1) {
+		switch (opcao) {
+		case 1:
 			conta = new ContaCorrente(saldo, numero, titular);
-		} else {
+			break;
+		case 2:
 			conta = new ContaEspecial(saldo, numero, titular);
+			break;
+		default:
+			break;
 		}
 		
 		System.out.print("Digite um valor a ser sacado da conta (com centavos separados por .): ");
