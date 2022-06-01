@@ -1,4 +1,4 @@
-package l05.q1;
+package l05.avulsas;
 import java.util.Scanner;
 
 public class MainTextoMaiorMenor {
