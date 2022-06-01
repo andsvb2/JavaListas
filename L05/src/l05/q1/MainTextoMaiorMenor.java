@@ -1,3 +1,4 @@
+package l05.q1;
 import java.util.Scanner;
 
 public class MainTextoMaiorMenor {

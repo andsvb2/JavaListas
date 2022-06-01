@@ -1,3 +1,4 @@
+package l05.q2;
 import java.util.Scanner;
 
 public class ContaLetra {
